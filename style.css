@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.pin {
+  width: 60px;
+  height: 8px;
+  background-color: rgb(66, 65, 65);
+  border-top-left-radius: 10%;
+}
+
+.left {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(240, 194, 125);
+  border-top-right-radius: 20%;
+  border-bottom-right-radius: 20%;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+  position: relative;
+}
+.mid {
+  width: 75px;
+  height: 40px;
+  background-color: rgb(240, 194, 125);
+  position: relative;
+}
+.right {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(240, 194, 125);
+  border-top-left-radius: 20%;
+  border-bottom-left-radius: 20%;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+}
+
+.band {
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  left: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.tol {
+  background-color: rebeccapurple;
+}
+
+.band1 {
+  background-color: rgb(196, 59, 49);
+}
+
+.band2 {
+  background-color: rgb(55, 136, 44);
+  left: 0;
+}
+
+.band3 {
+  background-color: rgb(53, 85, 226);
+}
+
+.band4 {
+  background-color: rgb(44, 39, 39);
+  left: 40px;
+}
+
+.band5 {
+  background-color: rgb(184, 59, 128);
+  left: 63px;
+}
+
+.text {
+  position: relative;
+  left: -3.5px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
