@@ -1,10 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(249, 245, 245);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+
+  height: 400px;
+  width: 800px;
+  background-color: rgb(231, 215, 194);
+}
+
+.resistor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: #dddddd;
+}
+
+.inputs {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #cccccc;
+}
+
+.inputs h2 {
+  position: absolute;
+  top: 20px;
+  font-size: 30px;
+}
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
 }
 
 .pin {
@@ -85,3 +148,81 @@
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
+
+.r3,
+.r2 {
+  display: none;
+}
+
+/* //////////// */
+
+.squre {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.col1 {
+  background-color: red;
+  margin-top: 10px;
+}
+.col2 {
+  background-color: green;
+}
+.col3 {
+  background-color: blue;
+}
+.col4 {
+  background-color: rebeccapurple;
+}
+
+.ref {
+  margin-top: 50px;
+  display: flex;
+  width: 66%;
+  justify-content: space-evenly;
+  background-color: #cccccc;
+  border-radius: 20px;
+}
+
+.dots {
+  margin: 10px;
+}
+
+.details {
+  margin: 10px;
+}
+
+.details p {
+  margin-bottom: 7px;
+}
+
+.details p:first-of-type {
+  margin-top: 7px;
+}
+
+/* Selects */
+
+select {
+  margin: 5px;
+  width: 200px;
+  height: 30px;
+  border: none;
+  background-color: #dddddd;
+  padding: 0 5px;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right;
+
+  /* background and info from https://stackoverflow.com/questions/14218307/select-arrow-style-change */
+}
+
+select:focus {
+  outline: 0;
+}
+
+/* Selection box style */

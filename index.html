@@ -7,61 +7,218 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="4band">
-      <div class="container">
-        <div class="pin"></div>
-        <div class="left">
-          <div class="band1 band">1</div>
-        </div>
-        <div class="mid">
-          <div class="band band2">2</div>
-          <div class="band band3">M</div>
-        </div>
-        <div class="right">
-          <div class="tol band">T</div>
-        </div>
-        <div class="pin"></div>
-      </div>
-    </div>
+    <header>
+      <h1>Resistor Color Code Calculator</h1>
+    </header>
 
-    <div class="5band">
-      <div class="container">
-        <div class="pin"></div>
-        <div class="left">
-          <div class="band1 band">1</div>
-        </div>
-        <div class="mid">
-          <div class="band band2">2</div>
-          <div class="band band3">3</div>
-          <div class="band band4">M</div>
-        </div>
-        <div class="right">
-          <div class="tol band">T</div>
-        </div>
-        <div class="pin"></div>
-      </div>
-    </div>
+    <main>
+      <div class="main">
+        <div class="resistor">
+          <div class="r1">
+            <div class="container">
+              <div class="pin"></div>
+              <div class="left">
+                <div class="band1 band">1</div>
+              </div>
+              <div class="mid">
+                <div class="band band2">2</div>
+                <div class="band band3">M</div>
+              </div>
+              <div class="right">
+                <div class="tol band">T</div>
+              </div>
+              <div class="pin"></div>
+            </div>
+          </div>
 
-    <div class="6band">
-      <div class="container">
-        <div class="pin"></div>
-        <div class="left">
-          <div class="band1 band">1</div>
-        </div>
-        <div class="mid">
-          <div class="band band2">2</div>
-          <div class="band band3">3</div>
-          <div class="band band4">M</div>
-          <div class="band band5">T</div>
-        </div>
-        <div class="right">
-          <div class="tol band">
-            <div class="text">TC</div>
+          <div class="r2">
+            <div class="container">
+              <div class="pin"></div>
+              <div class="left">
+                <div class="band1 band">1</div>
+              </div>
+              <div class="mid">
+                <div class="band band2">2</div>
+                <div class="band band3">3</div>
+                <div class="band band4">M</div>
+              </div>
+              <div class="right">
+                <div class="tol band">T</div>
+              </div>
+              <div class="pin"></div>
+            </div>
+          </div>
+
+          <div class="r3">
+            <div class="container">
+              <div class="pin"></div>
+              <div class="left">
+                <div class="band1 band">1</div>
+              </div>
+              <div class="mid">
+                <div class="band band2">2</div>
+                <div class="band band3">3</div>
+                <div class="band band4">M</div>
+                <div class="band band5">T</div>
+              </div>
+              <div class="right">
+                <div class="tol band">
+                  <div class="text">TC</div>
+                </div>
+              </div>
+              <div class="pin"></div>
+            </div>
+          </div>
+
+          <div class="ref">
+            <div class="dots">
+              <div class="squre col1"></div>
+              <div class="squre col2"></div>
+              <div class="squre col3"></div>
+              <div class="squre col4"></div>
+            </div>
+            <div class="details">
+              <p>1 ----> Band1</p>
+              <p>2 ----> Band2</p>
+              <p>M ----> Multiplier</p>
+              <p>T ----> Tolerence</p>
+            </div>
           </div>
         </div>
-        <div class="pin"></div>
+
+        <div class="inputs">
+          <h2>Select Values</h2>
+          <select id="band1form" name="band1form">
+            <option value="select" selected disabled>
+              Select color of Band 1
+            </option>
+            <option value="black" style="background-color: black; color: #fff">
+              Black
+            </option>
+            <option value="brown" style="background-color: brown; color: #fff">
+              Brown
+            </option>
+            <option value="red" style="background-color: red">Red</option>
+            <option value="orange" style="background-color: Orange">
+              Orange
+            </option>
+            <option value="yellow" style="background-color: yellow">
+              Yellow
+            </option>
+            <option value="green" style="background-color: green; color: #fff">
+              Green
+            </option>
+            <option value="blue" style="background-color: blue; color: #fff">
+              Blue
+            </option>
+            <option value="violet" style="background-color: violet">
+              Violet
+            </option>
+            <option value="grey" style="background-color: grey; color: #fff">
+              Grey
+            </option>
+            <option value="white" style="background-color: white">White</option>
+          </select>
+
+          <!-- band 2 values -->
+
+          <select id="band2form" name="band2form">
+            <option value="select" selected disabled>
+              Select color of Band 2
+            </option>
+            <option value="black" style="background-color: black; color: #fff">
+              Black
+            </option>
+            <option value="brown" style="background-color: brown; color: #fff">
+              Brown
+            </option>
+            <option value="red" style="background-color: red">Red</option>
+            <option value="orange" style="background-color: Orange">
+              Orange
+            </option>
+            <option value="yellow" style="background-color: yellow">
+              Yellow
+            </option>
+            <option value="green" style="background-color: green; color: #fff">
+              Green
+            </option>
+            <option value="blue" style="background-color: blue; color: #fff">
+              Blue
+            </option>
+            <option value="violet" style="background-color: violet">
+              Violet
+            </option>
+            <option value="grey" style="background-color: grey; color: #fff">
+              Grey
+            </option>
+            <option value="white" style="background-color: white">White</option>
+          </select>
+
+          <!-- multiplier -->
+
+          <select id="mlform" name="mlform">
+            <option value="select" selected disabled>
+              Select color of Multiplier
+            </option>
+            <option value="black" style="background-color: black; color: #fff">
+              Black
+            </option>
+            <option value="brown" style="background-color: brown; color: #fff">
+              Brown
+            </option>
+            <option value="red" style="background-color: red">Red</option>
+            <option value="orange" style="background-color: Orange">
+              Orange
+            </option>
+            <option value="yellow" style="background-color: yellow">
+              Yellow
+            </option>
+            <option value="green" style="background-color: green; color: #fff">
+              Green
+            </option>
+            <option value="blue" style="background-color: blue; color: #fff">
+              Blue
+            </option>
+            <option value="violet" style="background-color: violet">
+              Violet
+            </option>
+            <option value="gold" style="background-color: gold">Gold</option>
+            <option value="silver" style="background-color: silver">
+              Silver
+            </option>
+          </select>
+
+          <!-- Tolerance -->
+
+          <select id="tform" name="tform">
+            <option value="select" selected disabled>
+              Select color of Multiplier
+            </option>
+            <option value="gray" style="background-color: gray; color: #fff">
+              Gray
+            </option>
+            <option value="brown" style="background-color: brown; color: #fff">
+              Brown
+            </option>
+            <option value="red" style="background-color: red">Red</option>
+
+            <option value="green" style="background-color: green; color: #fff">
+              Green
+            </option>
+            <option value="blue" style="background-color: blue; color: #fff">
+              Blue
+            </option>
+            <option value="violet" style="background-color: violet">
+              Violet
+            </option>
+            <option value="gold" style="background-color: gold">Gold</option>
+            <option value="silver" style="background-color: silver">
+              Silver
+            </option>
+          </select>
+        </div>
       </div>
-    </div>
+    </main>
 
     <script src="./app.js"></script>
   </body>
