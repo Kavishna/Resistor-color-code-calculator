@@ -14,11 +14,22 @@
     <main>
       <div class="main">
         <div class="resistor">
-          <div class="r1">
+          <!-- Tabs on top -->
+
+          <div class="tabs">
+            <button id="4band" class="tablink">4 Bands</button>
+            <button id="5band" class="tablink">5 Bands</button>
+            <button id="6band" class="tablink">6 Bands</button>
+            <button class="tablink">SMD</button>
+          </div>
+
+          <!-- 4band resistor -->
+
+          <div id="r1" class="r1 tabcon">
             <div class="container">
               <div class="pin"></div>
               <div class="left">
-                <div class="band1 band">1</div>
+                <div id="band1" class="band1 band">1</div>
               </div>
               <div class="mid">
                 <div class="band band2">2</div>
@@ -31,7 +42,9 @@
             </div>
           </div>
 
-          <div class="r2">
+          <!-- 5band resistor -->
+
+          <div id="r2" class="r2 tabcon">
             <div class="container">
               <div class="pin"></div>
               <div class="left">
@@ -49,7 +62,9 @@
             </div>
           </div>
 
-          <div class="r3">
+          <!-- 6band resistor -->
+
+          <div id="r3" class="r3 tabcon">
             <div class="container">
               <div class="pin"></div>
               <div class="left">
@@ -70,25 +85,37 @@
             </div>
           </div>
 
+          <!-- details of resistor values -->
+
           <div class="ref">
-            <div class="dots">
-              <div class="squre col1"></div>
-              <div class="squre col2"></div>
-              <div class="squre col3"></div>
-              <div class="squre col4"></div>
-            </div>
             <div class="details">
-              <p>1 ----> Band1</p>
-              <p>2 ----> Band2</p>
-              <p>M ----> Multiplier</p>
-              <p>T ----> Tolerence</p>
+              <div id="col1" class="squre col1"></div>
+              <div id="col2" class="squre col2"></div>
+              <div id="col3" class="squre col3"></div>
+              <div id="col4" class="squre col4"></div>
+              <div id="col5" class="squre col5"></div>
+              <div id="col6" class="squre col6"></div>
+            </div>
+
+            <div id="id">
+              <p class="psq col1">1: Band1</p>
+              <p class="psq col2">2: Band2</p>
+              <p class="psq col3">3: Band3</p>
+              <p class="psq col4">M: Multipper</p>
+              <p class="psq col5">T: Tolerance</p>
+              <p class="psq col6">
+                TC: Temperature <br />
+                Coefficient
+              </p>
             </div>
           </div>
         </div>
 
         <div class="inputs">
+          <!-- Band 1 values -->
+
           <h2>Select Values</h2>
-          <select id="band1form" name="band1form">
+          <select id="band1form" class="band1form" name="band1form">
             <option value="select" selected disabled>
               Select color of Band 1
             </option>
@@ -122,7 +149,7 @@
 
           <!-- band 2 values -->
 
-          <select id="band2form" name="band2form">
+          <select id="band2form" class="band2form" name="band2form">
             <option value="select" selected disabled>
               Select color of Band 2
             </option>
@@ -154,9 +181,42 @@
             <option value="white" style="background-color: white">White</option>
           </select>
 
+          <!-- band3 values -->
+          <select id="band3form" class="band3form" name="band3form">
+            <option value="select" selected disabled>
+              Select color of Band 3
+            </option>
+            <option value="black" style="background-color: black; color: #fff">
+              Black
+            </option>
+            <option value="brown" style="background-color: brown; color: #fff">
+              Brown
+            </option>
+            <option value="red" style="background-color: red">Red</option>
+            <option value="orange" style="background-color: Orange">
+              Orange
+            </option>
+            <option value="yellow" style="background-color: yellow">
+              Yellow
+            </option>
+            <option value="green" style="background-color: green; color: #fff">
+              Green
+            </option>
+            <option value="blue" style="background-color: blue; color: #fff">
+              Blue
+            </option>
+            <option value="violet" style="background-color: violet">
+              Violet
+            </option>
+            <option value="grey" style="background-color: grey; color: #fff">
+              Grey
+            </option>
+            <option value="white" style="background-color: white">White</option>
+          </select>
+
           <!-- multiplier -->
 
-          <select id="mlform" name="mlform">
+          <select id="mlform" class="mlform" name="mlform">
             <option value="select" selected disabled>
               Select color of Multiplier
             </option>
@@ -190,9 +250,9 @@
 
           <!-- Tolerance -->
 
-          <select id="tform" name="tform">
+          <select id="tform" class="tform" name="tform">
             <option value="select" selected disabled>
-              Select color of Multiplier
+              Select color of Tolerence
             </option>
             <option value="gray" style="background-color: gray; color: #fff">
               Gray
@@ -214,6 +274,39 @@
             <option value="gold" style="background-color: gold">Gold</option>
             <option value="silver" style="background-color: silver">
               Silver
+            </option>
+          </select>
+
+          <!-- teegd -->
+
+          <select id="tc" class="tc" name="tc">
+            <option value="select" selected disabled>
+              Select color of Temperature Coefficient
+            </option>
+            <option value="black" style="background-color: black; color: #fff">
+              Black
+            </option>
+            <option value="brown" style="background-color: brown; color: #fff">
+              Brown
+            </option>
+            <option value="red" style="background-color: red">Red</option>
+            <option value="orange" style="background-color: Orange">
+              Orange
+            </option>
+            <option value="yellow" style="background-color: yellow">
+              Yellow
+            </option>
+            <option value="green" style="background-color: green; color: #fff">
+              Green
+            </option>
+            <option value="blue" style="background-color: blue; color: #fff">
+              Blue
+            </option>
+            <option value="violet" style="background-color: violet">
+              Violet
+            </option>
+            <option value="grey" style="background-color: grey; color: #fff">
+              Grey
             </option>
           </select>
         </div>
